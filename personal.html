@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THAHA</title>
+    <link rel="shortcut icon" href="icon title.jpg.png">
+    <!-- <link rel="stylesheet" href="personal.css"> -->
+    <!-- <link rel="stylesheet" href="muhz imge.jpg"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            font-family:'Caveat', cursive ;
+        }
+        
+        .nev-bar{
+            display: flex;
+            text-align: center;
+            height: 12vh;
+            background-color:rgb(155, 160, 160);
+            position: sticky;
+            top: 0px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 30px 0px 30px;
+        }
+        .place-holder{
+            background-color: white;
+            border-radius: 80px;
+            padding: 0px 20px 0px 20px;
+            display: flex;
+            justify-content: center;
+            height: 28px;
+            font-size: 20px;  
+            border-style: solid;
+            padding:18px ;
+        }
+        /* .place-holder:hover{
+            background-color: black;
+        } */
+        input::placeholder{
+            color:red; 
+
+        }
+        /* input::place-holder:hover{
+            color: white;
+        } */
+        
+        .nev-bar-items{
+            /* background-color: red; */
+            width:50% ;
+            font-size: 20px;
+            display: flex;
+            justify-content:  space-around;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+        .nev-bar-items a{
+            text-decoration: none;
+            color: black;
+        }
+        .nev-bar-items a:hover{
+            color: white;
+        }
+        #home-page{
+            height: 88vh;
+          padding:  0px 100px 0px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            scroll-margin-top: 12vh;
+            background-color: rgb(53, 54, 54);
+
+        }
+        .home-page-image{
+            width: 300px;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            align-items: center;
+            background-image:url(muhz.jpg)
+        }
+        .home-page-content{
+            color: white;
+            width: 50%;
+            height: 70%;
+            display: flex;
+            flex-direction:column;
+            justify-content: space-evenly;
+            text-align: center;
+            padding-top: 80px;
+            margin-left: 30px;
+            /* background-color: blue; */
+        }
+        .h1{
+            margin-bottom: 50px;
+        }
+        .social{
+            background-color: rgb(243, 8, 8);
+            display: flex;
+            width: 50%px;
+            border-radius: 5.5px;          
+            justify-content: space-evenly;
+            padding: 0px 15px 0px 0px;
+            margin: 15px 15px -15px 15px ;
+        }
+        .social a{
+            color: white;
+        }
+        #about-page{
+            scroll-margin: 12vh;
+            height: 88vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+            padding: 30px 30px 30px 30px;
+            background-image: url(theme.jpg);
+            background-size: cover;
+            border-radius: 15px;
+            background-position: center;
+            color: white;
+        }.about{
+            background-color:rgb(155, 160, 160);
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            color: rgb(230, 230, 230);
+            
+        }
+        .about-content{
+            margin-top: 100px;
+           font-size: large;
+            font-weight: bold;
+            color:skyblue;
+        }#skill-page{
+            height: 88vh;
+            background-color:pink;
+            margin: 100px 0px 0px 0px ;
+            scroll-margin: 12vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 15px;
+        }.skill-page-content{
+            display: flex;
+            justify-content: center;
+            padding: 30px 30px 30px 30px;.
+            justify-content: center;
+            /* background-color: blue; */
+            margin-top: -200px;
+        }
+        .skill-page-content i{
+            font-size: 100px;
+        
+        }
+        .headings{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+            height: 30vh;
+            padding-top: 10px;
+            
+
+        }.dot{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* background-color: brown; */
+            padding-left: 15px;
+        }  
+        #contact-page{
+            height: 88vh;
+            background-color:#0b0d10;
+            margin: 100px 0px 0px 0px ;
+            scroll-margin: 12vh;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            justify-content: space-evenly;
+        }
+        .place-holder-form{
+            width: 700px;
+            height: 40px;
+            border-radius: 15px;
+            /* border-color: red; */
+            border-style: solid;
+            border-width: 2px;
+            color: red;
+            font-size: 20px;   
+            display: flex;
+            text-align: center; 
+        }
+        .form{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            width: 80%;
+            height: 75%;
+            align-items: center;
+        }
+        .button{
+            width: 60px;
+            height: 40px;
+            color: aliceblue;
+            background-color: red;
+            border-radius: 1000px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .button:hover{
+            background-color: aliceblue;
+            color: red;
+            transition: 0.15s;
+
+        }
+        
+        .contact-page-head{
+            color: red;
+        }
+    </style>
+<div class="main-container">
+    <div class="nev-bar">
+     <h2>
+        THAHA
+     </h2>
+     <div class="space-holder">
+        <!-- <form action="input-text"><space-holder >what you want to know about me?
+        </space-holder> -->
+        <input type="text"placeholder="what you want know about me?" class="place-holder">
+
+     </div>
+    <div class="nev-bar-items">
+     <a href="#home-page">HOME</a>
+     <a href="#about-page">ABOUT</a>
+     <a href="#skill-page">SKILL</a>
+     <a href="#contact-page">CONTACT</a>
+    </div>
+</div>
+<div id="home-page">
+    <div class="home-page-image">
+    </div>
+    <div class="home-page-content">
+        <h1 class="h1">THAHA MUHSIN TM</h1>
+        <p>
+            I'm Thaha, a passionate newcomer stepping
+            into the exciting and ever-evolving world of software development.
+            With a deep curiosity for technology and an unwavering determination to learn,
+            I am on a mission to transform my big dreams into reality. My ultimate goal is to become a skilled full-stack developer,
+            capable of designing and building robust, user-friendly applications from the ground up.
+        </p>
+        <div class="social">
+         <a href=""><i class="fa-brands fa-whatsapp"></i>
+         </a>
+         <a href=""><i class="fa-brands fa-instagram"></i>
+         </a>
+         <a href=""><i class="fa-brands fa-facebook"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/thaha-work-14b876310">
+            <i class="fa-brands fa-linkedin"></i>
+         </a>
+        </div>
+       
+    </div>
+</div>
+<div id="about-page">
+    <h1 class="about">ABOUT ME</h1>
+    <div class="about-content">
+        <p>
+            Hello, Im Thaha, a budding front-end web developer with a passion for creating engaging
+             and visually appealing online experiences. As a student pursuing web development, I am continuously
+              exploring the exciting world of web technologies, 
+            focusing on building user-friendly interfaces that balance aesthetics with functionality.  
+            I specialize in HTML, CSS, and JavaScript and am delving into modern frameworks and libraries 
+            to enhance my skills further. My goal is to craft websites that are not only visually stunning 
+            but also highly responsive, ensuring a seamless experience across all devices.  
+            What draws me to web development is its blend of creativity and logic. Designing layouts, 
+            experimenting with colors and animations, and solving coding challenges all fuel my enthusiasm
+             for this field. I also enjoy keeping up with the latest trends in tech and web design to stay 
+             ahead in this dynamic industry.  
+            When Im not coding, I like exploring design inspiration, learning new tools, 
+            and collaborating on projects that push my boundaries. This website marks the 
+            beginning of my journey as a developer, and Im excited to share my growth and projects with you.  
+            Lets connect and create something extraordinary together!  
+        </p>
+    </div>
+
+
+</div>
+<div id="skill-page">
+    <div class="headings"> 
+        <h1 class="skills">
+        MY SKILLS
+      </h1>
+      <h3 class="html">
+        HTML
+      </h3>
+    </div>
+    <div class="skill-page-content">
+        <p>
+            <i class="fa-brands fa-html5"> </i>
+            HTML (HyperText Markup Language) is the foundation of every website,
+            and have a strong grasp of its concepts and usage. From structuring
+            web pages to creating semantic, well-organized code, I take pride in writing clean and efficient HTML.  
+            Here are some of the ways I apply my HTML skills:  
+    
+            <div class="dot">
+                &#9658 Crafting the structure of web pages with proper use of elements like headings, paragraphs, lists, and tables.  
+                <br>
+                &#9658 Designing forms with input fields, buttons, and validation to enhance user interaction.  
+                <br>
+                &#9658 Using semantic HTML to ensure better readability and accessibility for users and search engines.  
+                <br>
+                &#9658 Integrating multimedia like images, videos, and audio seamlessly into web pages.  
+                <br>
+                &#9658 Embedding external content, including maps, social media feeds, and more, using iframe and embed tags.  
+
+                HTML is my starting point for every project, and I combine it with CSS and JavaScript to bring ideas to life.
+                It’s more than just code, it’s a tool to create meaningful digital experiences.  
+            </div>  
+        </p>
+    </div>      
+</div>
+
+    <!-- <div class="contact-page-head">
+        <h1>
+         CONTACT
+        </h1>
+    </div>
+    <div class="form">
+        <form onsubmit="sendemail(); reset(); return false;">
+        <input type="text" placeholder="Full Name" class="place-holder-form" id="name"> 
+        <input type="email"placeholder="e-mail" class="place-holder-form" id="email"> 
+        <input type="text"placeholder="Do you have any thing to tell me" class="place-holder-form" id="text"> 
+        <button  type="submit" class="button">
+            Send
+        </button>
+     </form>
+    </div> -->
+    <div id="contact-page">
+        <form onsubmit="sendemail(); reset(); return false;">
+            <h3 >GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="YOUR GOOD NAME" required>
+            <input type="email" id="email" placeholder ="E mail" required>
+            <input type="text" id="text" placeholder="MESSAGE" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+
+
+
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendemail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "nimthados@gmail.com",
+    Password : "562181b2-d94b-49e7-b91c-54aad1c6723d",
+    To : 'nimthados@gmail.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+</body>
+</html>
